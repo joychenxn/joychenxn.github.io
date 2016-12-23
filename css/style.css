@@ -1,0 +1,603 @@
+@import 'reset.css';
+
+html{
+    font-family: 'Raleway', 'Julius Sans One', sans-serif;
+    font-size: 14px;
+    color: #ffffff;
+    font-weight: 300;
+}
+
+.clear{
+    clear:both;
+}
+
+header{
+    background-color: #374785;
+    height: 90vh;
+}
+
+nav{
+    height: 12vh;
+    width: 100%;
+    position: fixed;
+}
+
+nav img{
+    margin: 2rem;
+    width: 3rem;
+    height: 3rem;
+}
+
+nav ul{
+    float: right;
+    margin: 3rem 2rem;
+}
+
+nav ul li{
+    display: inline-block;
+    margin: .5rem;
+}
+
+nav ul li a{
+    color: #ffffff;
+    text-decoration: none;
+}
+
+nav.shrink{
+    background-color: #4f66bf;
+    opacity: 0.9;
+    height: 12vh;
+    width: 100%;
+    padding-top: 0px;
+    position: fixed;
+    z-index: 20;
+    transition: all 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+/*style three small balls rotating planets*/
+div.small {
+  position:relative;
+  top: 28%;
+  left: 10%;
+  width: 1.5rem;
+  height: 1.5rem;
+  border-radius: 1rem;
+  z-index: 1;
+}
+
+/*style and animate three small balls in the head*/
+div.ball-head{
+    width: .5rem;
+    height: .5rem;
+    border-radius: 1rem;
+    display: inline-block;
+    animation-duration: 1800ms;
+    animation-timing-function: ease;  
+}
+
+@keyframes ball-design{
+    0% {opacity: 0; margin-left: 1rem;}
+    100% {opacity: 1; margin-left: 0rem;}
+}
+@keyframes ball-code{
+    0% {opacity: 0; margin-left: 2rem;}
+    100% {opacity: 1; margin-left: 0rem;}
+}
+@keyframes ball-research{
+    0% {opacity: 0; margin-left: 3rem;}
+    100% {opacity: 1; margin-left: 0rem;}
+}
+
+div#ball-design{
+    background-color: #f76c6c;
+     animation-name: ball-design;
+}
+
+div#ball-code{
+    background-color: #a8d0e6;
+    animation-name: ball-code;
+}
+
+div#ball-research{
+    background-color: #ffe985;
+    animation-name: ball-research;
+}
+
+div#green{
+    background-color: #ffe985;
+}
+
+div#blue{
+    background-color: #a8d0e6;
+}
+
+div#yellow{
+    background-color: #f76c6c;
+}
+
+/*adjust the position of the orbit*/
+
+svg{
+    position: absolute;
+    width: 40%;
+    left: 12vw;
+    top: 33vh;
+    opacity: 0.4;
+    z-index: 1;
+}
+
+div.landing{
+    padding: 5vh;
+    height: 80vh;
+}
+
+div.landing img{
+    position: relative;
+    width: 50%;
+    height: auto;
+    margin: 11vh 2rem 3rem 5rem;
+    float: left;
+    z-index: 0;
+}
+
+@keyframes h1{
+    0% {opacity: 0; margin-left: 5rem;}
+    100% {opacity: 1; margin-left: 8rem;}
+}
+
+header div.landing h1{
+    font-size: 2.5rem;
+    margin: 40vh 1rem 1rem 8rem;
+    display: inline-block;
+    animation-name: h1;
+    animation-duration: 2400ms;
+    animation-timing-function: ease;   
+}
+
+@keyframes h2{
+    0% {opacity: 0; margin-left: 11rem;}
+    100% {opacity: 1; margin-left: 8rem;}
+}
+
+header div.landing h2{
+    font-size: 1.2rem;
+    display: inline-block;
+    margin-left: 8rem;
+    float: left;
+    animation-name: h2;
+    animation-duration: 2400ms;
+    animation-timing-function: ease;
+}
+
+section.projects h2{
+    background-color: #374785;
+    text-align: center;
+    padding: 3rem;
+    font-size: 1.2rem;
+}
+
+section.projects{
+    background-color: #f4f4f4;
+    width: 100%;
+    height: 100vh;
+    margin: 0 auto;
+    text-align: center;
+}
+
+div.project-row1{
+    width: 100%;
+    background-color: #f4f4f4;
+    text-align: center;
+}
+
+figure.project{
+    width: 33.3333%;
+    height: 45vh;
+    float: left;
+    display: inline-block;
+    color: #ffffff;
+}
+
+figure.project img{
+    width: 200px;
+    height: auto;
+    margin-top: 2rem;
+}
+
+figure.project h3{
+    margin: 5rem 2rem 1rem 2rem;
+}
+
+figure div{
+    transition: 300ms linear all;
+}
+
+figure:hover div{
+    transform: scale(1.1,1.1);
+    transition: 300ms linear all;   
+}
+
+figure#project1,
+figure#project3,
+figure#project5{
+    background-color: #6A80D5;
+}
+
+figure#project2,
+figure#project4,
+figure#project6{
+    background-color: #4f66bf;
+}
+
+section#skills{
+    background-color: #f4f4f4;
+    height: 65vh;
+    color:#374785;
+    padding: 3rem;
+}
+
+section#skills h2{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 1rem;
+}
+
+section#skills h3{
+    text-align: center;
+    font-size: 1.2rem;
+}
+
+div#skills-sub{
+    width: 70%;
+    margin: 4rem auto;
+}
+
+div.skill{
+    width: 33.333%;
+    float: left;
+}
+
+div.skill div{
+    margin: 0 auto;
+    width: 60%;
+    text-align: left;
+}
+
+/*style&animate the three balls*/
+div#research{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: #ffe985;
+    margin: 0 auto;
+}
+
+div#design{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: #f76c6c;
+    margin: 0 auto;
+}
+
+div#coding{
+    width: 1.5rem;
+    height: 1.5rem;
+    border-radius: 1rem;
+    background-color: #abd0e6;
+    margin: 0 auto;
+}
+
+.skillball{
+    animation-name: skillball;
+    animation-duration: 2000ms;
+}
+
+@keyframes skillball{
+    0% {opacity: 0; margin-top: -8rem;}
+    100% {opacity: 1; margin-top: 0rem;}
+}
+
+div.skill h3{
+    font-size: 1.2rem;
+    text-align: center;
+    margin-bottom: 2rem;
+    margin-top: 1.5rem;
+}
+
+/*style&animate the sidebar of each skill*/
+
+div#research-side{
+    height: 15rem;
+    width: 0.2rem;
+    background-color: #ffe985;
+    float: left;
+    display: inline-block;
+}
+
+div#design-side{
+    height: 19rem;
+    width: 0.2rem;
+    background-color: #f76c6c;
+    float: left;
+    display: inline-block;
+}
+
+div#coding-side{
+    height: 5rem;
+    width: 0.2rem;
+    background-color: #abd0e6;
+    float: left;
+    display: inline-block;
+}
+
+.sidebar-research{
+    animation-name: sidebar-research;
+    animation-duration: 2000ms;
+}
+
+.sidebar-design{
+    animation-name: sidebar-design;
+    animation-duration: 2000ms;
+}
+
+.sidebar-coding{
+    animation-name: sidebar-coding;
+    animation-duration: 2000ms;
+}
+
+@keyframes sidebar-research{
+    0% {opacity: 0; height: 0;}
+    100% {opacity: 1; height: 15rem;}
+}
+
+@keyframes sidebar-design{
+    0% {opacity: 0; height: 0;}
+    100% {opacity: 1; height: 19rem;}
+}
+
+@keyframes sidebar-coding{
+    0% {opacity: 0; height: 0;}
+    100% {opacity: 1; height: 5rem;}
+}
+
+div.skill div ul li{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+    margin-left: 1.2rem;
+}
+
+footer{
+    color: #797878;
+    background-color: #b0b0b0;
+    padding: 7rem 5rem 1rem 5rem;
+    background-image: url(../../img/ground.png);
+    background-repeat: no-repeat;
+    background-position: center;
+}
+
+footer p{
+    text-align: center;
+    font-size: 0.8rem;
+    margin: 1rem;
+}
+
+p#quote{
+    margin-bottom: 1rem;
+    font-size: 1rem;
+}
+
+/*style project pages*/
+
+div#project1-head img{
+    float: left;
+    margin-top: 40vh;
+    margin-left: 20vh;
+
+}
+
+div#project1-head h1{
+    display: inline-block;
+    margin-top: 40vh;
+    margin-left: 30vh;
+    font-size: 2.5rem;
+}
+
+div#project1-head p{
+    float: left;
+    display: inline;
+    margin-left: 30vh;
+    margin-top: 10vh;
+    font-size: 1.2rem;
+}
+
+
+div#project1 {
+    padding: 5rem 10rem;
+    width: auto;
+}
+
+div#project1 p {
+    color: #1d1f21;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+div#project1 img{
+    width: 50%;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+}
+
+/*project 2*/
+div#project2-head img{
+    float: left;
+    margin-top: 40vh;
+    margin-left: 20vh;
+
+}
+
+div#project2-head h1{
+    display: inline-block;
+    margin-top: 40vh;
+    margin-left: 30vh;
+    font-size: 2.5rem;
+}
+
+div#project2-head p{
+    float: left;
+    display: inline;
+    margin-left: 30vh;
+    margin-top: 10vh;
+    font-size: 1.2rem;
+}
+
+
+div#project2 {
+    padding: 5rem 10rem;
+    width: auto;
+}
+
+div#project2 p {
+    color: #1d1f21;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+div#project2 img{
+    width: 50%;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+}
+
+/*project 3*/
+div#project3-head img{
+    float: left;
+    margin-top: 40vh;
+    margin-left: 20vh;
+
+}
+
+div#project3-head h1{
+    display: inline-block;
+    margin-top: 40vh;
+    margin-left: 30vh;
+    font-size: 2.5rem;
+}
+
+div#project3-head p{
+    float: left;
+    display: inline;
+    margin-left: 30vh;
+    margin-top: 10vh;
+    font-size: 1.2rem;
+}
+
+
+div#project3 {
+    padding: 5rem 10rem;
+    width: auto;
+}
+
+div#project3 p {
+    color: #1d1f21;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+div#project3 img{
+    width: 50%;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+}
+
+/*playground*/
+div#playground-head img{
+    float: left;
+    margin-top: 40vh;
+    margin-left: 20vh;
+
+}
+
+div#playground-head h1{
+    display: inline-block;
+    margin-top: 40vh;
+    margin-left: 30vh;
+    font-size: 2.5rem;
+}
+
+div#playground-head p{
+    float: left;
+    display: inline;
+    margin-left: 30vh;
+    margin-top: 10vh;
+    font-size: 1.2rem;
+}
+
+div#playground {
+    padding: 5rem 10rem;
+    width: auto;
+}
+
+div#playground p {
+    color: #1d1f21;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+div#playground img{
+    width: 50%;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+}
+
+/*playground*/
+div#about-head img{
+    float: left;
+    margin-top: 30vh;
+    margin-left: 20vh;
+
+}
+
+div#about-head h1{
+    display: inline-block;
+    margin-top: 40vh;
+    margin-left: 30vh;
+    font-size: 2.5rem;
+}
+
+div#about-head p{
+    float: left;
+    display: inline;
+    margin-left: 30vh;
+    margin-top: 5vh;
+    font-size: 1.2rem;
+}
+
+div#about {
+    padding: 5rem 10rem;
+    width: auto;
+}
+
+div#about p {
+    color: #1d1f21;
+    line-height: 1.5rem;
+    margin-bottom: 2rem;
+    float: left;
+    width: 40%;
+    margin-left: 7%;
+}
+
+div#about img{
+    width: 50%;
+    height: auto;
+    margin: 2rem auto;
+    display: block;
+    float: left;
+}
