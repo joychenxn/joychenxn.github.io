@@ -1,11 +1,23 @@
 @import 'reset.css';
+@font-face {
+    font-family: Open Sans;
+    src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
+}
+@font-face {
+    font-family: Raleway;
+    src: url(../fonts/Raleway/Raleway-Regular.ttf);
+}
 
 html{
-    font-family: 'Raleway', 'Julius Sans One', sans-serif;
+/*    font-family: 'Raleway', 'Julius Sans One', sans-serif;*/
+/*    font-family: Open Sans;*/
+    font-family: Raleway;
     font-size: 14px;
     color: #ffffff;
     font-weight: 300;
 }
+
+
 
 .clear{
     clear:both;
