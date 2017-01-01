@@ -1,31 +1,53 @@
 @import 'reset.css';
+/*Fonts used: Open Sans + Raleway*/
 @font-face {
     font-family: Open Sans;
     src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
 }
 @font-face {
+    font-family: Open Sans_Light;
+    src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+}
+@font-face {
+    font-family: Open Sans_Bold;
+    src: url(../fonts/Open_Sans/OpenSans-Bold.ttf);
+}
+@font-face {
     font-family: Raleway;
     src: url(../fonts/Raleway/Raleway-Regular.ttf);
 }
+@font-face {
+    font-family: Raleway_Thin;
+    src: url(../fonts/Raleway/Raleway-Thin.ttf);
+}
+@font-face {
+    font-family: Raleway_Light;
+    src: url(../fonts/Raleway/Raleway-Light.ttf);
+}
+@font-face {
+    font-family: Raleway_Bold;
+    src: url(../fonts/Raleway/Raleway-Bold.ttf);    
+}
+
+@font-face{
+    font-family: Raleway_Black;
+    src: url(../fonts/Raleway/Raleway-Black.ttf);
+}
 
 html{
-/*    font-family: 'Raleway', 'Julius Sans One', sans-serif;*/
-/*    font-family: Open Sans;*/
-    font-family: Raleway;
+    font-family: Raleway_Light;
     font-size: 14px;
     color: #ffffff;
     font-weight: 300;
 }
-
-
 
 .clear{
     clear:both;
 }
 
 header{
-    background-color: #374785;
     height: 90vh;
+    
 }
 
 nav{
@@ -56,7 +78,11 @@ nav ul li a{
 }
 
 nav.shrink{
-    background-color: #4f66bf;
+/*    background-color: #29308a;*/
+    background: -moz-linear-gradient(-45deg, #29308a 0%, #8750a1 81%, #8e6dc6 100%, #9f88d8 100%, #a72ad8 100%, #ba91c9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 0 0 66px 4px rgba(152,123,123,0.18);
     opacity: 0.9;
     height: 12vh;
     width: 100%;
@@ -66,6 +92,24 @@ nav.shrink{
     transition: all 1s;
     transition-duration: 1s;
     transition-timing-function: ease;
+}
+
+div.landing span{
+    content: " ";
+    display: block;
+    width: 100%;
+    height: 110%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background: #29308a; /* Old browsers */
+    background: -moz-linear-gradient(-45deg, #29308a 0%, #8750a1 81%, #8e6dc6 100%, #9f88d8 100%, #a72ad8 100%, #ba91c9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    transform: skewY(-7deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+    z-index: -1;
 }
 
 /*style three small balls rotating planets*/
@@ -165,7 +209,8 @@ header div.landing h1{
     display: inline-block;
     animation-name: h1;
     animation-duration: 2400ms;
-    animation-timing-function: ease;   
+    animation-timing-function: ease; 
+    color:#FFF;
 }
 
 @keyframes h2{
@@ -181,45 +226,53 @@ header div.landing h2{
     animation-name: h2;
     animation-duration: 2400ms;
     animation-timing-function: ease;
+    color:#CCB9FD;
+
 }
 
 section.projects h2{
-    background-color: #374785;
     text-align: center;
     padding: 3rem;
-    font-size: 1.2rem;
+    font-size: 1.5rem;
+    color:#9f88d8;
+    font-family: Raleway_Bold;
+    z-index: 1;
+    margin-top: 12%;
 }
 
 section.projects{
-    background-color: #f4f4f4;
+    background-color: #fff;
     width: 100%;
     height: 100vh;
     margin: 0 auto;
     text-align: center;
 }
 
-div.project-row1{
+div.project-row{
     width: 100%;
-    background-color: #f4f4f4;
+    background-color: #fff;
     text-align: center;
 }
 
 figure.project{
-    width: 33.3333%;
-    height: 45vh;
-    float: left;
+    width: 25%;
+    height: 30vh;
+    margin: 2rem;
     display: inline-block;
-    color: #ffffff;
+    color: #2c2c2c;
+    background: #fff;
+    box-shadow: 0 0 66px 4px rgba(152,123,123,0.18);
+    border-radius: 0.5rem;
 }
 
 figure.project img{
-    width: 200px;
+    width: 150px;
     height: auto;
     margin-top: 2rem;
 }
 
 figure.project h3{
-    margin: 5rem 2rem 1rem 2rem;
+    margin: 2rem 2rem 1rem 2rem;
 }
 
 figure div{
@@ -231,29 +284,38 @@ figure:hover div{
     transition: 300ms linear all;   
 }
 
-figure#project1,
-figure#project3,
-figure#project5{
-    background-color: #6A80D5;
-}
-
-figure#project2,
-figure#project4,
-figure#project6{
-    background-color: #4f66bf;
-}
-
 section#skills{
-    background-color: #f4f4f4;
     height: 65vh;
     color:#374785;
-    padding: 3rem;
+/*
+    margin-left: auto;
+    margin-right: auto;
+    box-sizing: border-box;
+    content: " ";
+    display: block;
+    position: relative;
+*/
+/*    background: linear-gradient(to bottom, #e1bbdf 0%, #688ee6 100%);*/
+/*
+    left: 50%;
+    width: 190vw;
+    height: 100vw;
+    border-radius: 100%;
+*/
+/*
+    transform: translateX(-50%);
+    transform: skewY(-7deg);
+    -webkit-transform-origin: 0;
+    transform-origin: 0;
+*/
 }
 
 section#skills h2{
-    font-size: 1.2rem;
+    font-size: 1.5rem;
     text-align: center;
     margin-bottom: 1rem;
+/*    color:#8750a1;*/
+    font-family: Raleway_Bold;
 }
 
 section#skills h3{
@@ -382,10 +444,11 @@ div.skill div ul li{
 }
 
 footer{
+    bottom: 0px;
     color: #797878;
     background-color: #b0b0b0;
     padding: 7rem 5rem 1rem 5rem;
-    background-image: url(../../img/ground.png);
+    background-image: url(../img/ground.png);
     background-repeat: no-repeat;
     background-position: center;
 }
