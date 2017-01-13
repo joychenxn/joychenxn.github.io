@@ -575,8 +575,8 @@ div.feature{
 
 @media screen and (max-width: 800px){
     div.project-head h2{
-        font-size: 2.5rem;
-        line-height: 3.5rem;
+        font-size: 2rem;
+        line-height: 3rem;
     }
     
     div.project-head h1{
