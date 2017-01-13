@@ -576,7 +576,7 @@ div.feature{
 @media screen and (max-width: 800px){
     
     header{
-    height: 90vh;
+    height: 700px;
 }
     
     div.project-head h2{
