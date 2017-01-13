@@ -573,10 +573,10 @@ div.feature{
     margin-top: 15%;
 }
 
-@media screen and (max-width: 500px){
+@media screen and (max-width: 700px){
     
     header{
-    height: 700px;
+    height: 90vh;
     }
     
     div.project-head h2{
