@@ -5,8 +5,20 @@
     src: url(../fonts/Open_Sans/OpenSans-Regular.ttf);
 }
 @font-face {
+    font-family: Open Sans_Italic;
+    src: url(../fonts/Open_Sans/OpenSans-Italic.ttf);
+}
+@font-face {
     font-family: Open Sans_Light;
     src: url(../fonts/Open_Sans/OpenSans-Light.ttf);
+}
+@font-face{
+    font-family: Open Sans_LightItalic;
+    src: url(../fonts/Open_Sans/OpenSans-LightItalic.ttf);
+}
+@font-face{
+    font-family: Open Sans_Semibold;
+    src: url(../fonts/Open_Sans/OpenSans-Semibold.ttf);
 }
 @font-face {
     font-family: Open Sans_Bold;
@@ -45,9 +57,18 @@ html{
     clear:both;
 }
 
+.center {
+  width: auto;
+  display: table;
+  margin-left: auto;
+  margin-right: auto;
+}
+.text-center {
+  text-align: center;
+}
+
 header{
     height: 90vh;
-    
 }
 
 nav{
@@ -464,47 +485,112 @@ p#quote{
     font-size: 1rem;
 }
 
-/*style project pages*/
+/*------------PROJECTS---------*/
 
-div#project1-head img{
-    float: left;
-    margin-top: 40vh;
-    margin-left: 20vh;
-
+div.projects{
+    font-family: Open Sans_Light;
+    color: #000;
+    line-height: 2.5rem;
 }
 
-div#project1-head h1{
-    display: inline-block;
-    margin-top: 40vh;
-    margin-left: 30vh;
-    font-size: 2.5rem;
+header.project{
+    height: 90vh;
+    background: #6f55de;
 }
 
-div#project1-head p{
-    float: left;
-    display: inline;
-    margin-left: 30vh;
-    margin-top: 10vh;
-    font-size: 1.2rem;
+header.project nav{
+    position: relative;
+    margin-bottom: 5%;
 }
 
-
-div#project1 {
-    padding: 5rem 10rem;
-    width: auto;
+header.project nav ul li a{
+    
+    text-decoration: none;
 }
 
-div#project1 p {
-    color: #1d1f21;
-    line-height: 1.5rem;
-    margin-bottom: 2rem;
+div.project-head h1{
+    font-size: 2.1rem;
+    margin: 20% 10% 0 0;
+    color: #AA98F7;
 }
 
-div#project1 img{
-    width: 50%;
-    height: auto;
-    margin: 2rem auto;
-    display: block;
+div.project-head h2{
+    font-size: 2.85rem;
+    line-height: 5rem;
+    color: #fff;
+}
+
+h3.type{
+    font-size: 1.5rem;
+    color: #fff;
+    line-height: 2.5rem;
+    color: #AA98F7;
+}
+
+div.process{
+    margin-top: 3%;
+}
+
+.processNote{
+    color:#ccc;
+}
+
+span.strong{
+    font-family: Open Sans_Semibold;
+}
+
+p{
+    margin: 8%;
+}
+
+p.emphasis{
+    font-family: Open Sans_Italic;
+    text-align: center;
+}
+
+p.callout{
+    text-align: center;
+}
+
+div.person{
+    text-align: center;
+}
+
+img.classStar-thumbnail{
+    height: 80px;
+}
+
+p.quotes{
+    font-family: Open Sans_LightItalic;
+}
+
+h3.feature{
+    margin-top: 15%;
+    line-height: 3.5rem;
+}
+
+div.feature{
+    margin-top: 15%;
+}
+
+@media screen and (max-width: 800px){
+    div.project-head h2{
+        font-size: 2.5rem;
+        line-height: 3.5rem;
+    }
+    
+    div.project-head h1{
+        margin-top: 0;
+    }
+    
+    h3.feature{
+    line-height: 2rem;
+    font-size: 1.5rem;
+    }
+
+    div.feature{
+    margin-top: 20%;
+    }
 }
 
 /*project 2*/
