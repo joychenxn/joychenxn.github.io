@@ -1,13 +1,53 @@
 //animate the navigation bar
-
 $(window).scroll(function(){
     if($(this).scrollTop() > 50){
-        $('nav').addClass('shrink');
+        $('header').addClass('shrink');
     }
     else{
-        $('nav').removeClass('shrink');
+        $('header').removeClass('shrink');
     }
 });
+
+//animate "what I did"
+$(window).scroll(function(){
+    if($(this).scrollTop() > 120){
+        $('#did').addClass('animated fadeInUp');
+    }
+    else{
+        $('#did').removeClass('animated fadeInUp');
+    }
+});
+
+//animate projects div
+$(window).scroll(function(){
+    if($(this).scrollTop()>200){
+        $('.projects').addClass('animated fadeInUp');
+    }
+    else{
+        $('.projects').removeClass('animated fadeInUp');
+    }
+});
+
+//animate "what I can do"
+$(window).scroll(function(){
+    if($(this).scrollTop() > 800){
+        $('#cando').addClass('animated fadeInUp');
+    }
+    else{
+        $('#cando').removeClass('animated fadeInUp');
+    }
+});
+
+//animate skill div
+$(window).scroll(function(){
+    if($(this).scrollTop()>1000){
+        $('.trunk').addClass('animated fadeInUp');
+    }
+    else{
+        $('.trunk').removeClass('animated fadeInUp');
+    }
+});
+
 
 //animate the three rotating balls
 var path = anime.path('path');
@@ -51,30 +91,16 @@ anime({
   easing: 'easeInOutExpo',
 });
 
+//remove animation when window size is small
 
+(function($) {
+    var $window = $(window)
 
-//animate the skills section
+    $window.resize(function resize(){
+        if ($window.width() < 600) {
+            return $('.small').addClass('invisible');
+        }
 
-var offset = $('div#research').offset().top/2;
-
-$(document).on('scroll',function(){
-   if($(document).scrollTop() > offset){
-       $('div#coding-side').addClass('sidebar-coding');
-       $('div#research-side').addClass('sidebar-research');
-       $('div#design-side').addClass('sidebar-design');
-       $('div#research').addClass('skillball');
-       $('div#design').addClass('skillball');
-       $('div#coding').addClass('skillball');
-       $('h2#cando').addClass('skillball');
-       
-   } 
-    else{
-        $('div#research-side').removeClass('sidebar-research');
-        $('div#design-side').removeClass('sidebar-design');
-        $('div#coding-side').removeClass('sidebar-coding');
-        $('div#research').removeClass('skillball');
-        $('div#design').removeClass('skillball');
-        $('div#coding').removeClass('skillball');
-        $('h2#cando').removeClass('skillball');
-    }
-});
+        $('.small').removeClass('invisible');
+    }).trigger('resize');
+})(jQuery);

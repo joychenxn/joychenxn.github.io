@@ -47,7 +47,7 @@
 }
 
 html{
-    font-family: Raleway_Light;
+    font-family: Raleway-Thin;
     font-size: 14px;
     color: #ffffff;
     font-weight: 300;
@@ -67,25 +67,48 @@ html{
   text-align: center;
 }
 
+/* centered columns styles */
+.row-centered {
+    text-align: center;
+}
+.col-centered {
+    display:inline-block;
+    float:none;
+    /* reset the text-align */
+    text-align:left;
+    /* inline-block space fix */
+    margin-right:-4px;
+}
+
+.invisible{
+    display: none;
+}
+
 header{
-    height: 90vh;
-}
-
-nav{
-    height: 12vh;
-    width: 100%;
+    height: 10%;
+    padding: 2%;
     position: fixed;
+    width: 100%;
+    z-index: 2;
 }
 
-nav img{
-    margin: 2rem;
-    width: 3rem;
-    height: 3rem;
+header.shrink{
+    background: -moz-linear-gradient(-45deg, #29308a 0%, #8750a1 81%, #8e6dc6 100%, #9f88d8 100%, #a72ad8 100%, #ba91c9 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(-45deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(135deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 0 0 66px 4px rgba(152,123,123,0.18);
+    opacity: 0.9;
+    transition: all 1s;
+    transition-duration: 1s;
+    transition-timing-function: ease;
+}
+
+img#logo{
+    width: 50px;
 }
 
 nav ul{
     float: right;
-    margin: 3rem 2rem;
 }
 
 nav ul li{
@@ -96,90 +119,32 @@ nav ul li{
 nav ul li a{
     color: #ffffff;
     text-decoration: none;
+    font-family: Raleway_Light;
 }
 
-nav.shrink{
-/*    background-color: #29308a;*/
-    background: -moz-linear-gradient(-45deg, #29308a 0%, #8750a1 81%, #8e6dc6 100%, #9f88d8 100%, #a72ad8 100%, #ba91c9 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    box-shadow: 0 0 66px 4px rgba(152,123,123,0.18);
-    opacity: 0.9;
-    height: 12vh;
-    width: 100%;
-    padding-top: 0px;
-    position: fixed;
-    z-index: 20;
-    transition: all 1s;
-    transition-duration: 1s;
-    transition-timing-function: ease;
+div#hero{
+    height: 850px;
+    background: url(../img/landing.png) no-repeat;
+    background-size: 110%;
 }
 
-div.landing span{
-    content: " ";
-    display: block;
-    width: 100%;
-    height: 110%;
+div#landing{
+    padding-top: 30vh;
+}
+
+svg{
     position: absolute;
-    top: 0;
-    left: 0;
-    background: #29308a; /* Old browsers */
-    background: -moz-linear-gradient(-45deg, #29308a 0%, #8750a1 81%, #8e6dc6 100%, #9f88d8 100%, #a72ad8 100%, #ba91c9 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    transform: skewY(-7deg);
-    -webkit-transform-origin: 0;
-    transform-origin: 0;
-    z-index: -1;
+    margin-top: 10%;
 }
 
-/*style three small balls rotating planets*/
 div.small {
-  position:relative;
-  top: 28%;
-  left: 10%;
-  width: 1.5rem;
-  height: 1.5rem;
+  position:absolute;
+  width: 2rem;
+  height: 2rem;
   border-radius: 1rem;
   z-index: 1;
-}
-
-/*style and animate three small balls in the head*/
-div.ball-head{
-    width: .5rem;
-    height: .5rem;
-    border-radius: 1rem;
-    display: inline-block;
-    animation-duration: 1800ms;
-    animation-timing-function: ease;  
-}
-
-@keyframes ball-design{
-    0% {opacity: 0; margin-left: 1rem;}
-    100% {opacity: 1; margin-left: 0rem;}
-}
-@keyframes ball-code{
-    0% {opacity: 0; margin-left: 2rem;}
-    100% {opacity: 1; margin-left: 0rem;}
-}
-@keyframes ball-research{
-    0% {opacity: 0; margin-left: 3rem;}
-    100% {opacity: 1; margin-left: 0rem;}
-}
-
-div#ball-design{
-    background-color: #f76c6c;
-     animation-name: ball-design;
-}
-
-div#ball-code{
-    background-color: #a8d0e6;
-    animation-name: ball-code;
-}
-
-div#ball-research{
-    background-color: #ffe985;
-    animation-name: ball-research;
+  margin-top: 12%;
+  margin-left: 5%;
 }
 
 div#green{
@@ -194,576 +159,375 @@ div#yellow{
     background-color: #f76c6c;
 }
 
-/*adjust the position of the orbit*/
-
-svg{
-    position: absolute;
-    width: 40%;
-    left: 12vw;
-    top: 33vh;
-    opacity: 0.4;
-    z-index: 1;
+div#planet{
+    margin-left: 5%;
 }
 
-div.landing{
-    padding: 5vh;
-    height: 80vh;
-}
-
-div.landing img{
-    position: relative;
-    width: 50%;
-    height: auto;
-    margin: 11vh 2rem 3rem 5rem;
-    float: left;
-    z-index: 0;
+div#landingtext{
+    margin: 10% 0 0 10%;
 }
 
 @keyframes h1{
-    0% {opacity: 0; margin-left: 5rem;}
-    100% {opacity: 1; margin-left: 8rem;}
+    0% {opacity: 0; margin-left: -5rem;}
+    100% {opacity: 1; margin-left: 0;}
 }
 
-header div.landing h1{
-    font-size: 2.5rem;
-    margin: 40vh 1rem 1rem 8rem;
+div#landingtext h1{
+    font-size: 3rem;
     display: inline-block;
     animation-name: h1;
     animation-duration: 2400ms;
     animation-timing-function: ease; 
     color:#FFF;
+    font-family: Raleway-Light;
 }
 
 @keyframes h2{
     0% {opacity: 0; margin-left: 11rem;}
-    100% {opacity: 1; margin-left: 8rem;}
+    100% {opacity: 1; margin-left: 0;}
 }
 
-header div.landing h2{
-    font-size: 1.2rem;
+div#landingtext h2{
+    font-size: 1.8rem;
     display: inline-block;
-    margin-left: 8rem;
     float: left;
     animation-name: h2;
     animation-duration: 2400ms;
     animation-timing-function: ease;
     color:#CCB9FD;
-
+    font-family: Raleway-Light;
 }
 
-section.projects h2{
-    text-align: center;
-    padding: 3rem;
-    font-size: 1.5rem;
-    color:#9f88d8;
-    font-family: Raleway_Bold;
-    z-index: 1;
-    margin-top: 12%;
-}
-
-section.projects{
-    background-color: #fff;
-    width: 100%;
-    height: 100vh;
-    margin: 0 auto;
-    text-align: center;
-}
-
-div.project-row{
-    width: 100%;
-    background-color: #fff;
-    text-align: center;
-}
-
-figure.project{
-    width: 25%;
-    height: 30vh;
-    margin: 2rem;
-    display: inline-block;
-    color: #2c2c2c;
+div.projects{
+    font-family: Raleway;
     background: #fff;
     box-shadow: 0 0 66px 4px rgba(152,123,123,0.18);
     border-radius: 0.5rem;
+    margin: 0 2% 3% 2%;
+    float: none;
+    display: inline-block;
+    animation-duration: 1.5s;
 }
 
-figure.project img{
-    width: 150px;
-    height: auto;
-    margin-top: 2rem;
+#project1{
+    animation-delay: 0.2s;
 }
 
-figure.project h3{
-    margin: 2rem 2rem 1rem 2rem;
+#project2{
+    animation-delay: 0.3s;
 }
 
-figure div{
-    transition: 300ms linear all;
+#project3{
+    animation-delay: 0.4s;
 }
 
-figure:hover div{
-    transform: scale(1.1,1.1);
-    transition: 300ms linear all;   
+#project4{
+    animation-delay: 0.7s;
 }
 
-section#skills{
-    height: 65vh;
-    color:#374785;
-/*
-    margin-left: auto;
-    margin-right: auto;
-    box-sizing: border-box;
+#project5{
+    animation-delay: 0.8s;
+}
+
+#project6{
+    animation-delay: 0.9s;
+}
+
+div#project-wrap div h3{
+    font-family: Raleway;
+    margin-bottom: 5%;
+    color: #a0a0a0;
+}
+
+div#skill-wrap h3{
+    font-family: Raleway;
+    margin-bottom: 5%;
+    color: #9e724e;
+}
+
+div#soils{
+    margin-top: 10%;
+}
+
+.soil{
     content: " ";
     display: block;
-    position: relative;
-*/
-/*    background: linear-gradient(to bottom, #e1bbdf 0%, #688ee6 100%);*/
-/*
-    left: 50%;
-    width: 190vw;
-    height: 100vw;
-    border-radius: 100%;
-*/
-/*
-    transform: translateX(-50%);
-    transform: skewY(-7deg);
-    -webkit-transform-origin: 0;
-    transform-origin: 0;
-*/
+    width: 100%;
+    height: 80%;
+    position: absolute;
+/*    top: 100px;*/
+    left: 0;
 }
 
-section#skills h2{
-    font-size: 1.5rem;
-    text-align: center;
-    margin-bottom: 1rem;
-/*    color:#8750a1;*/
-    font-family: Raleway_Bold;
+#soil1{
+    transform: skewY(-8deg);
+    background: #9e724e;
+    z-index: -10;
 }
 
-section#skills h3{
-    text-align: center;
-    font-size: 1.2rem;
+#soil2{
+    transform: skewY(-3deg);
+    background: #774e33;
+    z-index: -2;
+    animation-delay: 0.5s;
 }
 
-div#skills-sub{
-    width: 70%;
-    margin: 4rem auto;
+#soil3{
+    transform: skewY(8deg);
+    background: #d1c5b8;
+    z-index: -20;
+    animation-delay: 1s;
 }
 
-div.skill{
-    width: 33.333%;
-    float: left;
-}
-
-div.skill div{
-    margin: 0 auto;
-    width: 60%;
-    text-align: left;
-}
-
-/*style&animate the three balls*/
-div#research{
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 1rem;
-    background-color: #ffe985;
-    margin: 0 auto;
-}
-
-div#design{
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 1rem;
-    background-color: #f76c6c;
-    margin: 0 auto;
-}
-
-div#coding{
-    width: 1.5rem;
-    height: 1.5rem;
-    border-radius: 1rem;
-    background-color: #abd0e6;
-    margin: 0 auto;
-}
-
-.skillball{
-    animation-name: skillball;
-    animation-duration: 2000ms;
-}
-
-@keyframes skillball{
-    0% {opacity: 0; margin-top: -8rem;}
-    100% {opacity: 1; margin-top: 0rem;}
-}
-
-div.skill h3{
-    font-size: 1.2rem;
-    text-align: center;
-    margin-bottom: 2rem;
-    margin-top: 1.5rem;
-}
-
-/*style&animate the sidebar of each skill*/
-
-div#research-side{
-    height: 15rem;
-    width: 0.2rem;
-    background-color: #ffe985;
-    float: left;
+div.trunk{
+    height: 400px;
+    background: #774e33;
+    float: none;
     display: inline-block;
+    box-shadow: 0 0 66px 4px rgba(99,62,41,0.58);
+    margin: 8% 2% 3% 2%;
+    vertical-align: text-top;
+    color: #d1c5b8;
+    font-family: Raleway-Thin;
+    border-radius: 1rem;
+    animation-duration: 1.5s;
 }
 
-div#design-side{
-    height: 19rem;
-    width: 0.2rem;
-    background-color: #f76c6c;
-    float: left;
-    display: inline-block;
+div.trunk h4{
+    font-family: Raleway;
+    margin-bottom: 10%;
+/*    color: #9e724e;*/
+    color: #d1c5b8;
 }
 
-div#coding-side{
-    height: 5rem;
-    width: 0.2rem;
-    background-color: #abd0e6;
-    float: left;
-    display: inline-block;
-}
-
-.sidebar-research{
-    animation-name: sidebar-research;
-    animation-duration: 2000ms;
-}
-
-.sidebar-design{
-    animation-name: sidebar-design;
-    animation-duration: 2000ms;
-}
-
-.sidebar-coding{
-    animation-name: sidebar-coding;
-    animation-duration: 2000ms;
-}
-
-@keyframes sidebar-research{
-    0% {opacity: 0; height: 0;}
-    100% {opacity: 1; height: 15rem;}
-}
-
-@keyframes sidebar-design{
-    0% {opacity: 0; height: 0;}
-    100% {opacity: 1; height: 19rem;}
-}
-
-@keyframes sidebar-coding{
-    0% {opacity: 0; height: 0;}
-    100% {opacity: 1; height: 5rem;}
-}
-
-div.skill div ul li{
-    margin-bottom: 1rem;
-    font-size: 1rem;
-    margin-left: 1.2rem;
-}
-
-footer{
-    bottom: 0px;
-    color: #797878;
-    background-color: #b0b0b0;
-    padding: 7rem 5rem 1rem 5rem;
-    background-image: url(../img/ground.png);
-    background-repeat: no-repeat;
-    background-position: center;
-}
-
-footer p{
-    text-align: center;
-    font-size: 0.8rem;
-    margin: 1rem;
-}
-
-p#quote{
-    margin-bottom: 1rem;
-    font-size: 1rem;
-}
-
-/*------------PROJECTS---------*/
-
-div.projects{
-    font-family: Open Sans_Light;
-    color: #000;
-    line-height: 2.5rem;
-}
-
-header.project{
-    height: 90vh;
-    background: #6f55de;
-}
-
-header.project nav{
-    position: relative;
+div.trunk ul li{
+    color: #c99771;
     margin-bottom: 5%;
 }
 
-header.project nav ul li a{
+#trunk1{
+    height: 300px;
+    animation-delay: 0.2s;
+}
+
+#trunk2{
+    height: 370px;
+    animation-delay: 0.3s;
+}
+
+#trunk3{
+    height: 200px;
+    animation-delay: 0.4s;
+}
+
+footer{
+    padding-top: 15%;
+    padding-bottom: 2%;
+}
+
+footer div{
+    position: relative;
+}
+
+footer div p{
+    font-family: Raleway;
+    color: #633e29;
+}
+
+p#quote{
+    margin-bottom: 2%
+}
+
+div.logo{
+    float: none;
+    display: inline-block;
+    margin-bottom: 2%;
+}
+
+div.logo img{
+    width: 30px;
+    margin: 0 0.5rem 0 0.5rem;
+}
+
+@media (min-width: 768px) and (max-width: 992px){
     
-    text-decoration: none;
-}
-
-div.project-head h1{
-    font-size: 2.1rem;
-    margin: 20% 10% 0 0;
-    color: #AA98F7;
-}
-
-div.project-head h2{
-    font-size: 2.85rem;
-    line-height: 5rem;
-    color: #fff;
-}
-
-h3.type{
-    font-size: 1.5rem;
-    color: #fff;
-    line-height: 2.5rem;
-    color: #AA98F7;
-}
-
-div.process{
-    margin-top: 3%;
-}
-
-.processNote{
-    color:#ccc;
-}
-
-span.strong{
-    font-family: Open Sans_Semibold;
-}
-
-p{
-    margin: 8%;
-}
-
-p.emphasis{
-    font-family: Open Sans_Italic;
-    text-align: center;
-}
-
-p.callout{
-    text-align: center;
-}
-
-div.person{
-    text-align: center;
-}
-
-img.classStar-thumbnail{
-    height: 80px;
-}
-
-p.quotes{
-    font-family: Open Sans_LightItalic;
-}
-
-h3.feature{
-    margin-top: 15%;
-    line-height: 3.5rem;
-}
-
-div.feature{
-    margin-top: 15%;
-}
-
-@media screen and (max-width: 700px){
-    
-    header{
-    height: 120vh;
+    div#hero{
+        height: 600px;
+        background-size: 130%;
     }
     
-    div.project-head h2{
+    img#logo{
+        width: 40px;
+    }
+    
+    div#hero header div div{
+        width: 50%;
+    }
+    
+    div#planet{
+        margin-left: 0;
+        width: 50%;
+        float: left;
+    }
+    
+    div#planet img{
+        width: 120%;
+    }
+    
+    div#landingtext{
+        width: 40%;
+        float: left;
+        margin-top: auto;
+    }
+    
+    div#landingtext h1{
+        font-size: 2.5rem;
+    }
+    
+    div#landingtext h2{
+        font-size: 1.5rem;
+    }
+    
+    footer{
+        padding-top: 25%; 
+    }
+}
+
+@media (max-width: 768px){
+    
+    div#hero{
+        height: 410px;
+        background-size: 130%;
+    }
+    
+    img#logo{
+        width: 40px;
+    }
+    
+    div#hero header div div{
+        width: 10%;
+    }
+    
+    div#hero header div nav{
+        width: 100%;
+        margin: 0;
+    }
+    
+    div#landing{
+        padding-top: 15vh;
+    }
+    
+    div#planet{
+        margin-left: 0;
+        width: 50%;
+        float: left;
+    }
+    
+    div#planet img{
+        width: 120%;
+    }
+    
+    div#landingtext{
+        width: 40%;
+        float: left;
+        margin-top: auto;
+    }
+    
+    div#landingtext h1{
         font-size: 2rem;
-        line-height: 3rem;
     }
     
-    div.project-head h1{
-        margin-top: 0;
+    div#landingtext h2{
+        font-size: 1rem;
     }
     
-    h3.feature{
-    line-height: 2rem;
-    font-size: 1.5rem;
+    .soil{
+        height: 60%;
+    }
+    
+    div#trunk1{
+        height: 350px;
+    }
+    
+    footer{
+        padding-top: 25%;
     }
 
-    div.feature{
-    margin-top: 20%;
+}
+
+@media (min-width:320px) and (max-width: 468px){
+    div#hero{
+        height: 410px;
+        background-size: 170%;
+    }
+    
+    img#logo{
+        width: 30px;
+    }
+    
+    div#hero header div div{
+        width: 5%;
+        float: left;
+    }
+    
+    div#hero header div nav{
+        width: 90%;
+        margin-left: 2rem;
+    }
+    
+    nav ul li{
+        margin: 0.5rem;
+        font-size: 1.2rem;
+    }
+    
+    div#landing{
+        padding-top: 15vh;
+    }
+    
+    div#planet{
+        margin-left: 0;
+        width: 40%;
+        float: left;
+    }
+    
+    div#planet img{
+        width: 140%;
+    }
+    
+    div#landingtext{
+        width: 50%;
+        float: left;
+        margin-top: auto;
+    }
+    
+    div#landingtext h1{
+        font-size: 1.5rem;
+        margin-bottom: 0;
+    }
+    
+    div#landingtext h2{
+        font-size: 1rem;
+        margin: 0;
+    }
+    
+    #project-wrap div h3{
+        font-size: 1.5rem; 
+    }
+    
+    #skill-wrap div h3{
+        font-size: 1.5rem;
+    }
+    
+    .soil{
+        height: 60%;
+    }
+    
+    div#trunk1{
+        height: 390px;
+    }
+    
+    footer{
+        padding-top: 25%;
     }
 }
 
-/*project 2*/
-div#project2-head img{
-    float: left;
-    margin-top: 40vh;
-    margin-left: 20vh;
-
-}
-
-div#project2-head h1{
-    display: inline-block;
-    margin-top: 40vh;
-    margin-left: 30vh;
-    font-size: 2.5rem;
-}
-
-div#project2-head p{
-    float: left;
-    display: inline;
-    margin-left: 30vh;
-    margin-top: 10vh;
-    font-size: 1.2rem;
-}
-
-
-div#project2 {
-    padding: 5rem 10rem;
-    width: auto;
-}
-
-div#project2 p {
-    color: #1d1f21;
-    line-height: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-div#project2 img{
-    width: 50%;
-    height: auto;
-    margin: 2rem auto;
-    display: block;
-}
-
-/*project 3*/
-div#project3-head img{
-    float: left;
-    margin-top: 40vh;
-    margin-left: 20vh;
-
-}
-
-div#project3-head h1{
-    display: inline-block;
-    margin-top: 40vh;
-    margin-left: 30vh;
-    font-size: 2.5rem;
-}
-
-div#project3-head p{
-    float: left;
-    display: inline;
-    margin-left: 30vh;
-    margin-top: 10vh;
-    font-size: 1.2rem;
-}
-
-
-div#project3 {
-    padding: 5rem 10rem;
-    width: auto;
-}
-
-div#project3 p {
-    color: #1d1f21;
-    line-height: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-div#project3 img{
-    width: 50%;
-    height: auto;
-    margin: 2rem auto;
-    display: block;
-}
-
-/*playground*/
-div#playground-head img{
-    float: left;
-    margin-top: 40vh;
-    margin-left: 20vh;
-
-}
-
-div#playground-head h1{
-    display: inline-block;
-    margin-top: 40vh;
-    margin-left: 30vh;
-    font-size: 2.5rem;
-}
-
-div#playground-head p{
-    float: left;
-    display: inline;
-    margin-left: 30vh;
-    margin-top: 10vh;
-    font-size: 1.2rem;
-}
-
-div#playground {
-    padding: 5rem 10rem;
-    width: auto;
-}
-
-div#playground p {
-    color: #1d1f21;
-    line-height: 1.5rem;
-    margin-bottom: 2rem;
-}
-
-div#playground img{
-    width: 50%;
-    height: auto;
-    margin: 2rem auto;
-    display: block;
-}
-
-/*playground*/
-div#about-head img{
-    float: left;
-    margin-top: 30vh;
-    margin-left: 20vh;
-
-}
-
-div#about-head h1{
-    display: inline-block;
-    margin-top: 40vh;
-    margin-left: 30vh;
-    font-size: 2.5rem;
-}
-
-div#about-head p{
-    float: left;
-    display: inline;
-    margin-left: 30vh;
-    margin-top: 5vh;
-    font-size: 1.2rem;
-}
-
-div#about {
-    padding: 5rem 10rem;
-    width: auto;
-}
-
-div#about p {
-    color: #1d1f21;
-    line-height: 1.5rem;
-    margin-bottom: 2rem;
-    float: left;
-    width: 40%;
-    margin-left: 7%;
-}
-
-div#about img{
-    width: 50%;
-    height: auto;
-    margin: 2rem auto;
-    display: block;
-    float: left;
-}

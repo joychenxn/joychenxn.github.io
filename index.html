@@ -7,174 +7,143 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/style.css">
-<!--        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">-->
-    </head>    
+        <link rel="stylesheet" href="css/animate.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    </head>
     <body>
-        <header>
-           <nav>
-                <a href="index.html"><img src="img/psudologo.png"></a>
-                <ul>
+       <div id="hero">
+        <header class="container-fluid">
+           <div class="row">
+               <div class="col-lg-5 col-md-4">
+                   <img id="logo" src="img/psudologo.png">
+               </div>
+               <nav class="col-lg-7 col-md-8">
+                   <ul>
                     <li><a href="#projects">Projects</a></li>
                     <li><a href="playground.html">Playground</a></li>
                     <li><a href="photography.html">Photography</a></li>
                     <li><a href="resume.html">Résumé</a></li> <li><a href="about.html">About</a></li>
                 </ul>
-            </nav>
-            <div class="landing">
-                <span></span>
-                <svg version="1.1" id="Layer_1"
-                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"                       viewBox="0 0 575.7 168.1" enable-background="new 0 0 575.7 168.1" xml:space="preserve">                           <path fill="none" stroke="#4f66bf" stroke-width="2" stroke-miterlimit="10" d="M575.2,84.1c0,46.2-128.7,83.6-287.4,83.6 S0.5,130.2,0.5,84.1S129.1,0.5,287.8,0.5S575.2,37.9,575.2,84.1z"/>
+               </nav>
+           </div>
+        </header>
+        <div class="container-fluid" id="landing">
+           <div class="row">
+               <div class="col-lg-6 col-md-5" id="planet">
+                   <svg version="1.1" id="Layer_1"
+                     xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"                       viewBox="0 0 575.7 168.1" enable-background="new 0 0 575.7 168.1" xml:space="preserve"> 
+                     <path fill="none" stroke="#4f66bf" stroke-width="0" stroke-miterlimit="10" d="M575.2,84.1c0,46.2-128.7,83.6-287.4,83.6 S0.5,130.2,0.5,84.1S129.1,0.5,287.8,0.5S575.2,37.9,575.2,84.1z"/>
                  </svg>
                  <div class="small" id="green"></div>
                  <div class="small" id="blue"></div>
                  <div class="small" id="yellow"></div>
                  <img src="img/header.png">
-                 <div>
-                     <h1>Hi, I'm <br  />Xiaonan Chen</h1>
-                     <h2>UX Designer and Code Lover</h2>
-                     <div class="ball-head" id="ball-design"></div>
-                     <div class="ball-head" id="ball-code"></div>
-                     <div class="ball-head" id="ball-research"></div>
-                 </div>
-             </div>
-        </header>
-            <div>
-                <section class="projects"><a name="projects"></a>
-                   <h2>What I Did</h2>
-                   <div class="project-row">
-                        <figure class="project" id="project1">
-                         <a href="project1.html">
-                          <div>
-                               <figcaption>
-                                   <h3>Project 1</h3>
-                                   <h4>UX Design</h4>
-                               </figcaption>
-                               <img src="img/project.png">
-                           </div>
-                           </a>
-                       </figure>
-                       <figure class="project" id="project2">
-                          <a href="project2.html">
-                           <div>
-                               <figcaption>
-                                   <h3>Project 2</h3>
-                                   <h4>UX Design</h4>
-                               </figcaption>
-                               <img src="img/project.png">
-                           </div>
-                         </a>   
-                       </figure>
-                       <figure class="project" id="project3">
-                          <a href="project3.html">
-                           <div>
-                               <figcaption>
-                                   <h3>Project 3</h3>
-                                   <h4>UX Design</h4>
-                               </figcaption>
-                               <img src="img/project.png">
-                           </div>
-                         </a>   
-                       </figure>
-                    </div>
-                    <div class="project-row">
-                       <figure class="project" id="project4">
-                           <div>
-                               <figcaption>
-                                   <h3>Project 4</h3>
-                                   <h4>UX Design</h4>
-                               </figcaption>
-                               <img src="img/project.png">
-                           </div>
-                       </figure>
-                       <figure class="project" id="project5">
-                           <div>
-                               <figcaption>
-                                   <h3>Project 5</h3>
-                                   <h4>UX Design</h4>
-                               </figcaption>
-                               <img src="img/project.png">
-                           </div>
-                       </figure>
-                       <figure class="project" id="project6">
-                           <div>
-                               <figcaption>
-                                   <h3>Playground</h3>
-                                   <h4>UX Design</h4>
-                               </figcaption>
-                               <img src="img/project.png">
-                           </div>
-                       </figure>
-                   </div>
-                </section><div class="clear"></div>
-                <section id="skills">
-                   <h2 id="cando">What I Can Do</h2>
-                   <div id="skills-sub">
-                   <div class="skill">
-                       <div id="research"></div>
-                       <h3>Research</h3>
-                       <div>
-                          <div id="research-side"></div>
-                           <ul>
-                               <li>User Interview</li>
-                               <li>Contextual Inquiry</li>
-                               <li>Affinity Diagrams</li>
-                               <li>Survey Design</li>
-                               <li>Think Alouds</li>
-                               <li>Heuristic Evaluation</li>
-                               <li>Affinity Diagramming</li>
-                               <li>Journey Mapping</li>
-                           </ul>
-                       </div>
-                   </div>
-                   <div class="skill">
-                       <div id="design"></div>
-                       <h3>Design</h3>
-                       <div>
-                          <div id="design-side"></div>
-                           <ul>
-                               <li>Storyboarding</li>
-                               <li>Wireframing</li>
-                               <li>Prototyping</li>
-                               <li>Sketching</li>
-                               <li>Adobe Illustrator</li>
-                               <li>Photoshop</li>
-                               <li>InDesign</li>
-                               <li>Sketch</li>
-                               <li>Invision</li>
-                               <li>After Effects</li>
-                           </ul>
-                       </div>
-                   </div>
-                   <div class="skill">
-                       <div id="coding"></div>
-                       <h3>Coding</h3>
-                       <div>
-                          <div id="coding-side"></div>
-                           <ul>
-                               <li>Html</li>
-                               <li>CSS</li>
-                               <li>JavaScript</li>
-                           </ul>
-                       </div>
-                       </div>
-                   </div>   
-                </section>
-                <footer>
-                    <p id="quote">Look up to the sky, stand firm on the ground.</p> 
-                    <p>Design & Code by Xiaonan Chen © 2016</p>
-                </footer>
-            </div>   
+               </div>
+               <div class="col-lg-4 col-md-2" id="landingtext">
+                   <h1 class="col-lg-12">Hi, I'm <br  />Xiaonan Chen</h1>
+                   <h2 class="col-lg-12">UX Designer and Code Lover</h2>
+               </div>
+           </div>    
+        </div>
+        </div>
+        <div class="container-fluid" id="project-wrap">
+            <div class="row text-center">
+                <h3 class="col-lg-12 center" id="did">What I Did</h3>
+            </div>
+            <div class="row row-centered">
+                <div class="col-lg-3 col-md-3 col-sm-5 projects projects-row1" id="project1">
+                    <h4>Class Star</h3>
+                    <h5>UX Design</h4>
+                    <img src="img/project.png">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-5 projects projects-row1" id="project2">
+                    <h4>Class Star</h3>
+                    <h5>UX Design</h4>
+                    <img src="img/project.png">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-5 projects projects-row1" id="project3">
+                    <h4>Class Star</h3>
+                    <h5>UX Design</h4>
+                    <img src="img/project.png">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-5 projects projects-row2" id="project4">
+                    <h4>Class Star</h3>
+                    <h5>UX Design</h4>
+                    <img src="img/project.png">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-5 projects projects-row2" id="project5">
+                    <h4>Class Star</h3>
+                    <h5>UX Design</h4>
+                    <img src="img/project.png">
+                </div>
+                <div class="col-lg-3 col-md-3 col-sm-5 projects projects-row2" id="project6">
+                    <h4>Class Star</h3>
+                    <h5>UX Design</h4>
+                    <img src="img/project.png">
+                </div>
+            </div>
+        </div>
+        <div class="container-fluid" id="skill-wrap">
+            <div id="soils" class="text-center">
+              <h3 id="cando">What I Can Do</h3>
+               <span class="soil" id="soil1"></span>
+               <span class="soil" id="soil2"></span>
+               <span class="soil" id="soil3"></span>
+            </div>
+            <div class="clearfix"></div>
+            <div class="row row-centered">
+                <div class="col-lg-2 col-xs-3 trunk" id="trunk1">
+                   <h4>Research</h4>
+                    <ul>
+                        <li>User Interview</li>
+                        <li>Contextual Inquiry</li>
+                        <li>Affinity Diagrams</li>
+                        <li>Survey Design</li>
+                        <li>Think Alouds</li>
+                        <li>Heuristic Evaluation</li>
+                        <li>Affinity Diagramming</li>
+                        <li>Journey Mapping</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-xs-3 trunk" id="trunk2">
+                    <h4>Design</h4>
+                    <ul>
+                        <li>Storyboarding</li>
+                        <li>Wireframing</li>
+                        <li>Prototyping</li>
+                        <li>Sketching</li>
+                        <li>Adobe Illustrator</li>
+                        <li>Adobe Photoshop</li>
+                        <li>Adobe InDesign</li>
+                        <li>Adobe After Effects</li>
+                        <li>Sketch</li>
+                        <li>Invision</li>
+                    </ul>
+                </div>
+                <div class="col-lg-2 col-xs-3 trunk" id="trunk3">
+                    <h4>Coding</h4>
+                    <ul>
+                        <li>Html</li>
+                        <li>CSS</li>
+                        <li>JavaScript & jQuery</li>
+                        <li>Python(in progress)</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <footer class="container-fluid">
+           <div class="row text-center row-centered">
+               <p class="col-lg-12" id="quote">Look up to the sky, stand firm on the ground.</p> 
+                <div class="col-lg-12 logo">
+                    <img src="img/linkedin.svg">
+                    <img src="img/github.svg">
+                    <img src="img/instagram.svg">
+                </div>
+                <p id="footer">Design & Code By Xiaonan Chen © 2017 | Last Update: 01/14/2017</p>
+           </div>
+        </footer>
         <script src="jquery-3.1.1.min.js"></script>
         <script src="anime.min.js"></script>
         <script type="text/javascript" src="script.js"></script>
-        <script>
-          (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-          (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-          m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-          })(window,document,'script','https://www.google-analytics.com/analytics.js','ga');
-
-          ga('create', 'UA-89558370-1', 'auto');
-          ga('send', 'pageview');
-	</script>  
     </body>
 </html>
