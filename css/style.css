@@ -179,7 +179,7 @@ div#landingtext h1{
     animation-duration: 2400ms;
     animation-timing-function: ease; 
     color:#FFF;
-    font-family: Raleway-Light;
+    font-family: Raleway_Light;
 }
 
 @keyframes h2{
@@ -195,7 +195,7 @@ div#landingtext h2{
     animation-duration: 2400ms;
     animation-timing-function: ease;
     color:#CCB9FD;
-    font-family: Raleway-Light;
+    font-family: Raleway_Light;
 }
 
 div.projects{
@@ -288,7 +288,7 @@ div.trunk{
     margin: 8% 2% 3% 2%;
     vertical-align: text-top;
     color: #d1c5b8;
-    font-family: Raleway-Thin;
+    font-family: Raleway_Thin;
     border-radius: 1rem;
     animation-duration: 1.5s;
 }
