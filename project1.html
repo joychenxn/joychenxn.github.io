@@ -7,37 +7,43 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" type="text/css" href="css/style.css">
+        <link rel="stylesheet" href="css/animate.css">
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
     </head>    
     <body>
-       <div class="projects">
-        <header class="project">
-            <nav>
-                <a href="index.html"><img src="img/psudologo.png"></a>
-                <ul>
-                    <li><a href="index.html">Project</a></li>
-                    <li><a href="playground.html">Playground</a></li> <li><a href="about.html">About</a></li>
-                </ul>
-            </nav>
-            <div class="project-head container">
+       <div class="subpages">
+           <header class="container-fluid">
                <div class="row">
-                <div class="col-lg-5 col-md-5 col-sm-5 col-xs-7">
-                    <h1 class="col-lg-9">Class Star</h1>
-                    <h2 class="col-lg-12">Course registration system redesign to let students take control of their waitlist</h2>
-                    <h3 class="col-lg-12 type">UX Design&nbsp;&nbsp;&nbsp; Responsive Web Design&nbsp;&nbsp;&nbsp; Customer Journey Map</h2>
-                </div>
-                <div class="col-lg-1 col-sm-1"></div>
-                <img class="col-lg-6 col-md-6 col-sm-6 col-xs-5" src="img/classStar-landing.png">
-              </div>
-              <div class="clearfix"></div>
+                   <div class="col-lg-5 col-md-4">
+                        <a href="index.html"><img id="logo" src="img/logo-3.png"></a>
+                   </div>
+                   <nav class="col-lg-7 col-md-8">
+                       <ul>
+                        <li><a href="index.html#project-wrap">Projects</a></li>
+                        <li><a href="playground.html">Playground</a></li>
+                        <li><a href="photography.html">Photography</a></li>
+                        <li><a href="resume.html">Résumé</a></li> 
+                        <li><a href="about.html">About</a></li>
+                       </ul>
+                   </nav>
+               </div>
+            </header>
+            <div class="container-fluid projects-landing" id="classStar">
+                <div class="row animated fadeInUp">
+                    <div class="col-lg-5 col-md-5 col-sm-5 col-xs-12">
+                        <h1 class="col-lg-9">Class Star</h1>
+                        <h2 class="col-lg-12">Course registration system redesign to let students take control of their waitlist</h2>
+                        <h3 class="col-lg-12 type">UX Design&nbsp;&nbsp;&nbsp; Responsive Web Design&nbsp;&nbsp;&nbsp; Customer Journey Map</h2>
+                    </div>
+                    <img class="col-lg-6 col-md-6 col-sm-6 col-xs-12" src="img/classStar-landing.png">
+                  </div>
+                  <div class="clearfix"></div>
             </div>
-        </header>
-        <div class="classStar container">
-              <div class="process row">
-                <h3 class="processNote col-lg-3">Overview</h3>
-                <p class="content col-lg-4 col-xs-12">For this project, we were challenged to dig out problems along a student’s journey from receiving the acceptance letter to the arrival at campus of Carnegie Mellon University(CMU). We were asked to pick up a problem and solve it with a responsive website innovatively. Class Star is the solution we came up with to solve the waitlist problem during course registration for new admitted students. We turned waitlist into exchangable spots and changed the suffering experience into an enjoyable one.</p>
+            <div class="container">
+              <div class="row overview">
+                <p class="content col-lg-8 col-xs-12 intro">For this project, we were challenged to dig out problems along a student’s journey from receiving the acceptance letter to the arrival at campus of Carnegie Mellon University(CMU). We were asked to pick up a problem and solve it with a responsive website innovatively. Class Star is the solution we came up with to solve the waitlist problem during course registration for new admitted students. We turned waitlist into exchangable spots and changed the suffering experience into an enjoyable one.</p>
                 <div class="col-lg-1"></div>
-                <div class="col-lg-3">
+                <div class="col-lg-3 team">
                    <span class="strong">Date</span>: Autumn 2016, 3 weeks<br />
                    <span class="strong">Team</span>: Xiaonan Chen, James Yan<br />
                    <span class="strong">My Role</span>: Researcher, Designer<br />
@@ -52,7 +58,7 @@
               
                 <p class="content col-lg-9">We conducted <span class="strong">guerrilla research</span> with one undergraduate student and two graduate students to learn their journey to CMU. Based on the interview, we made an as-is customer journey map depicting all the stages that a student might come across on his or her journey to the university. Among all the action, we defined three problem spaces.</p>
               </div>
-              <div class="row process">
+              <div class="row process text-center">
                   <div class="col-lg-3"></div>
                   <div class="col-lg-3 col-md-4 col-xs-4">
                       <img class="center classStar-thumbnail" src="img/classStar-person1.png">
@@ -83,23 +89,23 @@
                    <div class="col-lg-3"></div>
                    <img class="col-lg-9 col-md-12 col-xs-12 center" src="img/classStar-as-is-journey-map.png">
               </div>
-              <div class="process row">
+              <div class="process row text-center">
                   <div class="col-lg-3"></div>
-                  <div class="col-lg-3 col-md-4">
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                       <img class="center classStar-thumbnail" src="img/classStar-Problem1.png">
                       <p class="emphasis">Problem Space 1:<br />Previous house selling</p>
                       <p class="quotes">
                           "The process of selling old house is stressful because I don't have good legal advice to help me negotiate."
                       </p>
                   </div>
-                  <div class="col-lg-3 col-md-4">
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                       <img class="center classStar-thumbnail" src="img/classStar-Problem2.png">
                       <p class="emphasis">Problem Space 3:<br />Renting new house/apartment</p>
                       <p class="quotes">
                           “I don’t have time to fly to Pittsburgh to check the house situation.”<br />“We asked for a few pictures remotely, but hard to tell it’s a good place or not.”
                       </p>
                   </div>
-                  <div class="col-lg-3 col-md-4">
+                  <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12">
                       <img class="center classStar-thumbnail" src="img/classStar-Problem3.png">
                       <p class="emphasis">Problem Space 3:<br />Course registration</p>
                       <p class="quotes">
@@ -117,28 +123,26 @@
               </div>
               <div class="process row">
                   <div class="col-lg-3"></div>
-                  <p class="col-lg-9">Students have <span class="strong">difficulties in making decision</span> in course registration, which makes them confused and frustrated. The difficulties are mainly in two aspects: </p>
-                  <div class="col-lg-3"></div>
-                  <p class="col-lg-9"> 1) It’s hard to make decision on which course to take due to the lack of course information and feedback from previous students;</p>
-                  <div class="col-lg-3"></div>
-                  <p class="col-lg-9">2) It’s hard to make decision on whether to stay on a course waitlist because students have no idea on the chances that they could get into the course.</p>
-                  <div class="col-lg-3"></div>
-                 <p class="col-lg-9">We kept looking into the two aspects, and found out that the first one could basically be solved through communication with professors and other students. While the second one, waitlist, was the hard one to solve.</p>
+                  <div class="col-lg-9">
+                      <p>Students have <span class="strong">difficulties in making decision</span> in course registration, which makes them confused and frustrated. The difficulties are mainly in two aspects: </p>
+                      <p> 1) It’s hard to make decision on which course to take due to the lack of course information and feedback from previous students;</p>
+                      <p>2) It’s hard to make decision on whether to stay on a course waitlist because students have no idea on the chances that they could get into the course.</p>
+                      <p>We kept looking into the two aspects, and found out that the first one could basically be solved through communication with professors and other students. While the second one, waitlist, was the hard one to solve.</p>
+                  </div>
               </div>
               <div class="process row">
                   <div class="col-lg-3"></div>
                   <h3 class="keyContent col-lg-9">Waitlist is the main cause of anixety, because…</h3>
-                  <div class="col-lg-4"></div>
-                  <h3 class="keyContent col-lg-8">…students don’t have much knowledge and control over it.</h3>
+                  <h3 class="keyContent col-lg-7">…students don’t have much knowledge and control over it.</h3>
               </div>     
               <div class="process row">
                   <div class="col-lg-3"></div>
-                  <div class="col-lg-4 col-md-6">
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
                       <img class="center classStar-thumbnail" src="img/classStar-insight1.png">
                       <p>Students on waitlist don’t know if they can get into the course. They can only wait and hope.</p>
                   </div>
                   <div class="col-lg-1"></div>
-                  <div class="col-lg-4 col-md-6">
+                  <div class="col-lg-4 col-md-6 col-sm-6 col-xs-6">
                       <img class="center classStar-thumbnail" src="img/classStar-insight2.png">
                       <p>Students who resigter late stay at the bottom of waitlist, so they basically have no chance to get in even if they have an extremely strong desire towards the course. </p>
                   </div>
@@ -149,7 +153,7 @@
               </div>  
               <div class="process row">
                   <div class="col-lg-3"></div>
-                  <img class="center col-lg-4 col-md-3 col-xs-12" src="img/classStar-waitlist-system-current.jpg">
+                  <img class="center col-lg-4 col-md-3 col-sm-4 col-xs-12" src="img/classStar-waitlist-system-current.jpg">
                   <p class="col-lg-5">The current waitlist system follows the following rules:</p>
                   <p class="col-lg-5"><span class="strong">Ordered by registration time.</span> It follows “first come first serve” rule, but registration time for different students are randomly distributed, which might result unfairness.</p>
                   <p class="col-lg-5"><span class="strong">Maximum waitlist 5 courses.</span> Each student can waitlist 5 courses at most.</p>
@@ -158,7 +162,7 @@
                    <p class="col-lg-5"><span class="strong">Don’t show the chances for getting in.</span> So students can only wait and hope to get a spot.</p>
               </div>
               <div class="process row">
-                  <div class="col-lg-2 col-md-3"><p class="quotes ">“Reframing is a method of shifting semantic perspective in order to see things in a new way.”<br />— Jon Kolko</p></div>
+                  <div class="col-lg-2 col-md-3"><p class="quotes">“Reframing is a method of shifting semantic perspective in order to see things in a new way.”<br />— Jon Kolko</p></div>
                   <img class="center col-lg-10 col-md-9 col-xs-12" src="img/classStar-how-it-works.jpg">
               </div>
               <div class="process row">
@@ -171,15 +175,13 @@
               </div>
               <div class="process row">
                   <div class="col-lg-3"></div>
-                      <p class="col-lg-9">Under the envisioned system, the waitlist follows the following rules:</p>
-                      <div class="col-lg-3"></div>
-                      <p class="col-lg-9"><span class="strong">Ordered by preference and use stars to mesuare it.</span> We take out registration time factor out of current system, and instead, order waitlist spots based on students’ preference measured by stars. Each student will be given 10 stars before class registration starts.</p>
-                      <div class="col-lg-3"></div>
-                      <p class="col-lg-9"><span class="strong">Droplist and waitlist.</span> We let students know who is considering dropping a course by creating a droplist. Students who have already registered a class but considering dropping it put their names on the drop list, so waitlist students could know their chances of getting into the course.</p>
-                      <div class="col-lg-3"></div>
-                      <p class="col-lg-9"><span class="strong">Automatic exchange system.</span> At a certain time of the day, the system will automatically match waitlist students with droplist students based on their relative position. The exchange is daily until the end of course registration period.</p>
-                      <div class="col-lg-3"></div>
-                      <p class="col-lg-9"><span class="strong">Chat function.</span> Students on waitlist have no way to know other students’ thoughts or preference towards the course.</p>
+                  <div class="col-lg-9">
+                      <p>Under the envisioned system, the waitlist follows the following rules:</p>
+                      <p><span class="strong">Ordered by preference and use stars to mesuare it.</span> We take out registration time factor out of current system, and instead, order waitlist spots based on students’ preference measured by stars. Each student will be given 10 stars before class registration starts.</p>
+                      <p><span class="strong">Droplist and waitlist.</span> We let students know who is considering dropping a course by creating a droplist. Students who have already registered a class but considering dropping it put their names on the drop list, so waitlist students could know their chances of getting into the course.</p>
+                      <p><span class="strong">Automatic exchange system.</span> At a certain time of the day, the system will automatically match waitlist students with droplist students based on their relative position. The exchange is daily until the end of course registration period.</p>
+                      <p><span class="strong">Chat function.</span> Students on waitlist have no way to know other students’ thoughts or preference towards the course.</p>
+                  </div>
               </div>
               <div class="process row">
                       <div class="col-lg-3"></div>
@@ -198,24 +200,24 @@
                   <div class="col-lg-9"></div>
               </div>
               <div class="process row">
-                  <img class="center col-lg-7 col-md-7 col-xs-7" src="img/classStar-landing.png">
-                  <h3 class="col-lg-5 col-md-5 col-xs-5 keyContent feature">Use class stars to measure students’ preference towards a course, instead of registration time.</h3>
+                  <img class="center col-lg-7 col-md-7 col-xs-12" src="img/classStar-landing.png">
+                  <h3 class="col-lg-5 col-md-5 col-xs-12 keyContent feature">Use class stars to measure students’ preference towards a course, instead of registration time.</h3>
               </div>
               <div class="process row feature">
-                  <h3 class="col-lg-5 col-md-5 col-xs-5 keyContent feature">Manage waitlist course and assign class stars strategically.</h3>
-                  <img class="center col-lg-7 col-md-7 col-xs-7" src="img/classStar-feature2.png">
+                  <h3 class="col-lg-5 col-md-5 col-xs-12 keyContent feature">Manage waitlist course and assign class stars strategically.</h3>
+                  <img class="center col-lg-7 col-md-7 col-xs-12" src="img/classStar-feature2.png">
               </div>
               <div class="process row feature">
-                  <img class="center col-lg-7 col-md-7 col-xs-7" src="img/classStar-feature3.png">
-                  <h3 class="col-lg-5 col-md-5 col-xs-5 keyContent feature">Check droplist to know the chance for getting into your favourate course.</h3>
+                  <img class="center col-lg-7 col-md-7 col-xs-12" src="img/classStar-feature3.png">
+                  <h3 class="col-lg-5 col-md-5 col-xs-12 keyContent feature">Check droplist to know the chance for getting into your favourate course.</h3>
               </div>
               <div class="process row feature">
-                  <h3 class="col-lg-5 col-md-5 col-xs-5 keyContent feature">Communicate anytime and anywhere to know others’ thoughts about a course.</h3>
-                  <img class="center col-lg-7 col-md-7 col-xs-7" src="img/classStar-feature4.png">
+                  <h3 class="col-lg-5 col-md-5 col-xs-12 keyContent feature">Communicate anytime and anywhere to know others’ thoughts about a course.</h3>
+                  <img class="center col-lg-7 col-md-7 col-xs-12" src="img/classStar-feature4.png">
               </div>
               <div class="process row feature">
-                  <img class="center col-lg-7 col-md-7 col-xs-7" src="img/classStar-feature5.png">
-                  <h3 class="col-lg-5 col-md-5 col-xs-5 keyContent feature">Take control of your waitlist, get rid of uncertainties, and stop worrying.</h3>
+                  <img class="center col-lg-7 col-md-7 col-xs-12" src="img/classStar-feature5.png">
+                  <h3 class="col-lg-5 col-md-5 col-xs-12 keyContent feature">Take control of your waitlist, get rid of uncertainties, and stop worrying.</h3>
               </div>
               <div class="process row">
                   <h3 class="processNote col-lg-3">Reflection</h3>
@@ -225,17 +227,17 @@
                   <div class="col-lg-3"></div>
                   <p class="col-lg-9"><span class="strong">2. Combining two models as design instruction.</span> In this design, we followed two design models: the analysis-synthesis bridge model (left) and the double diamond model (right). I find that combining the two models is a quite effective way to walk through the process, since they instruct me to be aware of where to continuously push and where to stop and make a decision.</p>
                   <div class="col-lg-3"></div>
-                  <img class="col-lg-4 col-md-4 col-xs-12" src="img/classStar-reflection-1.png">
-                  <img class="col-lg-5 col-md-5 col-xs-12" src="img/classStar-reflection-2.png">
+                  <img class="col-lg-4 col-md-4 col-sm-5 col-xs-12" src="img/classStar-reflection-1.png">
+                  <img class="col-lg-5 col-md-5 col-sm-7 col-xs-12" src="img/classStar-reflection-2.png">
               </div>
               <div class="process row">
                   <div class="col-lg-3"></div>
                   <p class="col-lg-9"><span class="strong">3. Metaphor of objects should reflect user’s mental model in reality.</span> In this project, we first used badges instead of stars to represent student’s preference. But the feedback we got from students show that badges would cause some confusion, since it represents some kind of accomplishment in most cases. So finally we changed to stars - a more appropriate representation for preference. In our design, everything we use should confirm with users’ mental model and image in real life to reduce users’ mental burden when using our product.</p>
               </div>
-          </div>
+            </div>    
         </div>    
         <script src="jquery-3.1.1.min.js"></script>
         <script src="anime.min.js"></script>
-<!--         <script type="text/javascript" src="script.js"></script>-->
+        <script type="text/javascript" src="script.js"></script>
     </body>
 </html>

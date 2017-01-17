@@ -1,3 +1,22 @@
+//animate subpages
+$(window).scroll(function(){
+    if($(this).scrollTop() > 120){
+        $('.intro').addClass('animated fadeInUp');
+    }
+    else{
+        $('.intro').removeClass('animated fadeInUp');
+    }
+});
+
+$(window).scroll(function(){
+    if($(this).scrollTop() > 120){
+        $('.team').addClass('animated fadeInUp');
+    }
+    else{
+        $('.team').removeClass('animated fadeInUp');
+    }
+});
+
 //animate the navigation bar
 $(window).scroll(function(){
     if($(this).scrollTop() > 50){
@@ -104,3 +123,4 @@ anime({
         $('.small').removeClass('invisible');
     }).trigger('resize');
 })(jQuery);
+
