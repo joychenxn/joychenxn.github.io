@@ -458,7 +458,10 @@ div.overview span{
 }
 
 h3.processNote{
-    color: #ccc;
+    color:#8750A1;
+    opacity: 0.5;
+    font-size: 3rem;
+    font-family: Open Sans_SemiBold;
 }
 
 div.process{
@@ -489,6 +492,13 @@ img.classStar-thumbnail{
 h3.feature{
     margin-top: 10%;
     line-height: 3.5rem;
+}
+
+#guerrilla{
+    font-size: 2rem;
+    font-family: Open Sans_Italic;
+    margin: 2rem 0;
+    color: #9F88D8;
 }
 
 /********************************Responsive Design***************************************************/
