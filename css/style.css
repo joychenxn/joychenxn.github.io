@@ -469,6 +469,14 @@ div#parkHelper{
     background: #6187E6;
 }
 
+div#sketchbook{
+    background: #FED46D;
+}
+
+div#about{
+    background: RGBA(175, 178, 113, 1.00)
+}
+
 div.projects-landing div div{
     position: relative;
     float:left;
@@ -504,6 +512,19 @@ div#parkHelper div div h1{
     color: #AEC1EF;
 }
 
+div#sketchbook div div h1{
+    color:#FFEDBF;
+}
+
+
+div#about div div h1{
+    color: #5F622E;
+}
+
+div#about div div h3{
+    color: #5F622E;
+}
+
 div.projects-landing div div img{
     margin-left: 5%;
     width: 90%;
@@ -513,6 +534,12 @@ div.projects-landing div div img{
 #parkHelperLandingImage{
     width: 40%;    
     margin-left: 20%;
+}
+
+#sketchlanding{
+    width: 40%;
+    margin-top: 18%;
+    margin-left: 8%;
 }
 
 /******************Overview**************/
@@ -567,6 +594,10 @@ div.process div{
 }
 
 span.strong{
+    font-family: Open Sans_SemiBold;
+}
+
+h3.keyContent{
     font-family: Open Sans_SemiBold;
 }
 
