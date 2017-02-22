@@ -473,6 +473,10 @@ div#sketchbook{
     background: #FED46D;
 }
 
+div#playground{
+    background: #79CCD0;
+}
+
 div#about{
     background: RGBA(175, 178, 113, 1.00)
 }
@@ -516,6 +520,9 @@ div#sketchbook div div h1{
     color:#FFEDBF;
 }
 
+div#playground div div h1{
+    color: #C1FDFF;
+}
 
 div#about div div h1{
     color: #5F622E;
@@ -540,6 +547,11 @@ div.projects-landing div div img{
     width: 40%;
     margin-top: 18%;
     margin-left: 8%;
+}
+
+#playground-landing{
+    margin-top: 18%;
+    margin-left: -20%;
 }
 
 /******************Overview**************/
