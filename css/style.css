@@ -455,23 +455,27 @@ div.subpages p{
     margin: 3% auto;
 }
 
+/**************landing***********/
 
 div.projects-landing{
-    height: 100%;
+    height: 800px;
 }
 
 div#classStar{
     background: #EC4D47;
 }
 
-div.projects-landing div{
-    margin-top: 10%;
-    animation-duration: 1.2s;
-    transition: linear;
+div#parkHelper{
+    background: #6187E6;
 }
 
 div.projects-landing div div{
-    margin-left: 5%;
+    position: relative;
+    float:left;
+    left: 10%;
+    margin-top: 20%;
+    animation-duration: 1.2s;
+    transition: linear;
 }
 
 div.projects-landing div div h1{
@@ -489,15 +493,29 @@ div.projects-landing div div h2{
 div.projects-landing div div h3{
     font-size: 1.6rem;
     line-height: 2.3rem;
+    color: #fff;
 }
 
 div#classStar div div h1{
     color: #F2A19E;
 }
 
-div#classStar div div h3{
-    color: #fff;
+div#parkHelper div div h1{
+    color: #AEC1EF;
 }
+
+div.projects-landing div div img{
+    margin-left: 5%;
+    width: 90%;
+    margin-top: -20%;
+}
+
+#parkHelperLandingImage{
+    width: 40%;    
+    margin-left: 20%;
+}
+
+/******************Overview**************/
 
 div.overview{
     margin: 20% auto;
@@ -522,6 +540,8 @@ div.team p{
 div.overview span{
     font-family: Open Sans_SemiBold;
 }
+
+/*****************Design process starts here***************/
 
 h3.processNote{
     color:rgba(236, 77, 71, .6);
@@ -704,19 +724,19 @@ h3.feature{
     }
     
     /*subpages*/
-    div.projects-landing div div h1{
+    div.projects-landing div h1{
     font-size: 1.5rem;
     margin-bottom: 0;
     }
 
-    div.projects-landing div div h2{
+    div.projects-landing div h2{
     font-size: 2rem;
     color: #fff;
     line-height: 3rem;
     margin-top: 0;
     }
     
-    div.projects-landing div div h3{
+    div.projects-landing div h3{
     font-size: 1.2rem;
     line-height: 2rem;
     }
