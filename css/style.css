@@ -544,11 +544,18 @@ div.overview span{
 /*****************Design process starts here***************/
 
 h3.processNote{
-    color:rgba(236, 77, 71, .6);
     opacity: 0.5;
     font-size: 3.2rem;
     font-family: Open Sans_SemiBold;
     margin-bottom: 3%;
+}
+
+#classStarProcess h3.processNote{
+    color:rgba(236, 77, 71, .6);
+}
+
+#parkHelperProcess h3.processNote{
+    color:rgba(97, 135, 230, 1.00)
 }
 
 div.process{
@@ -574,13 +581,19 @@ span.strong{
     line-height: 1.58;
 }
 
+#guerrilla{
+    font-family: Open Sans_Italic;
+    color: rgba(236, 77, 71, .6);
+    border-left: 3px solid rgba(236, 77, 71, .6);
+}
+
 .long{
     width: 80%;
     line-height: 1.5;
 }
 
 img.diagram{
-    width: 90%;
+    width: 80%;
     height: auto;
 }
 
@@ -604,6 +617,17 @@ img.classStar-thumbnail{
 
 .quotes{
     font-style: italic;
+}
+
+#parkHelperProcess div p.numbers{
+    font-size: 4rem;
+    color: #ccc;
+    font-family: Open Sans_bold;
+    text-align: center;
+}
+
+#parkHelperProcess div p{
+    text-align: center;
 }
 
 h3.feature{
