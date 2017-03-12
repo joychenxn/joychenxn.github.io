@@ -98,10 +98,10 @@ header{
 }
 
 header.shrink{
-    background: -moz-linear-gradient(-45deg, #29308a 0%, #8750a1 81%, #8e6dc6 100%, #9f88d8 100%, #a72ad8 100%, #ba91c9 100%); /* FF3.6-15 */
-    background: -webkit-linear-gradient(-45deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* Chrome10-25,Safari5.1-6 */
-    background: linear-gradient(135deg, #29308a 0%,#8750a1 81%,#8e6dc6 100%,#9f88d8 100%,#a72ad8 100%,#ba91c9 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    box-shadow: 0 0 66px 4px rgba(152,123,123,0.18);
+    background: -moz-#F9F9F9; /* FF3.6-15 */
+    background: -webkit-#F9F9F9; /* Chrome10-25,Safari5.1-6 */
+    background: #F9F9F9;  /*W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 0 0 66px 4px rgba(194,194,194,.25);
     opacity: 0.9;
     transition: all 1s;
     transition-duration: 1s;
@@ -109,7 +109,8 @@ header.shrink{
 }
 
 img#logo{
-    width: 50px;
+    width: 30px;
+    margin-left: 5%;
 }
 
 nav ul{
@@ -118,11 +119,12 @@ nav ul{
 
 nav ul li{
     display: inline-block;
-    margin: .5rem;
+    margin-left: 1rem;
+    margin-right: 1rem;
 }
 
 nav ul li a{
-    color: #fff;
+    color: #9B9B9B;
     text-decoration: none;
     font-family: Raleway_Light;
     transition: 0.1s ease-in all;
@@ -131,12 +133,12 @@ nav ul li a{
 }
 
 nav ul li a:visited{
-    color: #fff;
+    color: #9B9B9B;
     text-decoration: none;
 }
 
 nav ul li a:hover{
-    color: #fff;
+    color: #9B9B9B;
     opacity: 1;
     text-decoration: none;
 }
@@ -149,12 +151,12 @@ nav ul li a:after{
     left: 40%;
     right: 40%;
     width: 20%;
-    border-bottom: 0.2rem solid #f4f4f4;
+    border-bottom: 0.2rem solid #9B9B9B;
     transition: all ease-in 0.2s;
 }
 
 header nav ul li a:hover:after{
-    color: #fff;
+    color: #9B9B9B;
     left: 0;
     width: 100%;
     opacity: 1;
@@ -163,47 +165,81 @@ header nav ul li a:hover:after{
 
 div#hero{
     height: 850px;
-    background: url(../img/landing.png) no-repeat;
-    background-size: 110%;
+    background-color: #F9F9F9;
+/*    background-size: 110%;*/
 }
 
 div#landing{
-    padding-top: 30vh;
-}
-
-svg{
-    position: absolute;
-    margin-top: 10%;
-}
-
-div.small {
-  position:absolute;
-  width: 2rem;
-  height: 2rem;
-  border-radius: 1rem;
-  z-index: 1;
-  margin-top: 12%;
-  margin-left: 5%;
-}
-
-div#green{
-    background-color: #ffe985;
-}
-
-div#blue{
-    background-color: #a8d0e6;
-}
-
-div#yellow{
-    background-color: #f76c6c;
+    padding-top: 20vh;
 }
 
 div#planet{
-    margin-left: 5%;
+    margin-left: 10%;
+    position: relative;
+}
+
+.circle{
+    position: absolute;
+    height: auto;
+}
+
+#big{
+    left: 2%;
+    top: 0;
+}
+
+#medium{
+    left:10%;
+    top: 8vh;
+}
+
+#small{
+    left: 18%;
+    top: 16vh;
+}
+
+@keyframes floating {
+  from {transform: translateY(-50%) translateX(-50%);}
+  65% {transform: translateY(-70%) translateX(-50%);}
+  to {transform: translateY(-50%) translateX(-50%);}
+}
+
+
+#ball-research{
+    position: absolute;
+    top: 28vh;
+    left: 19%; 
+    animation-duration: 2s;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+}
+
+#ball-design{
+    position: absolute;
+    top:8vh;
+    left: 40%; 
+    animation-duration: 2s;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+}
+
+#ball-coding{
+    position: absolute;
+    top: 50vh;
+    left: 63%; 
+    animation-duration: 2s;
+    animation-name: floating;
+    animation-iteration-count: infinite;
+}
+
+#user{
+    position: absolute;
+    left: 30%;
+    top:27vh;
 }
 
 div#landingtext{
-    margin: 10% 0 0 10%;
+    margin: 10% 0 0 0;
 }
 
 @keyframes h1{
@@ -212,13 +248,23 @@ div#landingtext{
 }
 
 div#landingtext h1{
-    font-size: 3rem;
+    font-size: 2.3rem;
     display: inline-block;
     animation-name: h1;
     animation-duration: 2400ms;
     animation-timing-function: ease; 
-    color:#FFF;
+    color:#4A4A4A;
     font-family: Raleway_Light;
+}
+
+div#landingtext h3{
+    font-size: 1.5rem;
+    display: inline-block;
+    animation-name: h2;
+    animation-duration: 2400ms;
+    animation-timing-function: ease; 
+    color:#9B9B9B;
+    font-family: Raleway_Thin;
 }
 
 @keyframes h2{
@@ -226,15 +272,38 @@ div#landingtext h1{
     100% {opacity: 1; margin-left: 0;}
 }
 
+@keyframes typing{
+    from {width: 0}
+}
+
+@keyframes caret{
+    50% {border-color: transparent;}
+}
+
 div#landingtext h2{
-    font-size: 1.8rem;
+    font-size: 2.3rem;
     display: inline-block;
     float: left;
+    border-right: 0.03em solid;
+/*
     animation-name: h2;
     animation-duration: 2400ms;
     animation-timing-function: ease;
-    color:#CCB9FD;
-    font-family: Raleway_Light;
+*/
+    color:#4A4A4A;
+    font-family: monospace;
+    width: 29ch;
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(29),
+               caret 1s steps(1) infinite;
+            
+}
+
+div#project-wrap div h3{
+    font-family: Raleway_Thin;
+    margin-bottom: 5%;
+    color: #4A4A4A;
 }
 
 div.projects{
@@ -247,12 +316,8 @@ div.projects{
     display: inline-block;
     animation-duration: 1.5s;
     position: relative;
-    height: 55vh;
+    height: 40vh;
     padding: 0;
-/*
-    background-size: cover;
-    background-repeat: no-repeat;
-*/
 }
 
 div.info{
@@ -309,7 +374,7 @@ div.info:hover{
 }
 
 div.info p{
-    font-family: Raleway;
+    font-family: Raleway_Thin;
     font-size: 2rem;
     color: #3c3c3c;
     margin: 3rem 0 3rem 0;
@@ -317,24 +382,17 @@ div.info p{
 
 div.info h4{
     font-family: Bebas_Neue;
-    font-size: 4.5rem;
+    font-size: 3rem;
     color: #3c3c3c;
     margin: 2rem 0 4rem 0;
     padding: 0 3rem;
     line-height: 150%;
 }
 
-
-div#project-wrap div h3{
-    font-family: Raleway;
-    margin-bottom: 5%;
-    color: #a0a0a0;
-}
-
 div#skill-wrap h3{
-    font-family: Raleway;
+    font-family: Raleway_Thin;
     margin-bottom: 5%;
-    color: #9e724e;
+    color: #4A4A4A;
 }
 
 div#soils{
@@ -353,30 +411,33 @@ div#soils{
 
 #soil1{
     transform: skewY(-8deg);
-    background: #9e724e;
+    background: #eee;
+    opacity: .34;
     z-index: -10;
 }
 
 #soil2{
     transform: skewY(-3deg);
-    background: #774e33;
+    background: #eee;
     z-index: -2;
+    opacity: .9;
     animation-delay: 0.5s;
 }
 
 #soil3{
     transform: skewY(8deg);
-    background: #d1c5b8;
+    background: #eee;
     z-index: -20;
+    opacity: .5;
     animation-delay: 1s;
 }
 
 div.trunk{
     height: 400px;
-    background: #774e33;
+    background: #eee;
     float: none;
     display: inline-block;
-    box-shadow: 0 0 66px 4px rgba(99,62,41,0.58);
+/*    box-shadow: 0 0 66px 4px rgba(99,62,41,0.58);*/
     margin: 8% 2% 3% 2%;
     vertical-align: text-top;
     color: #d1c5b8;
@@ -386,14 +447,30 @@ div.trunk{
 }
 
 div.trunk h4{
-    font-family: Raleway;
+    font-family: Raleway_Thin;
     margin-bottom: 10%;
 /*    color: #9e724e;*/
-    color: #d1c5b8;
+    color: #4A4A4A;
+    padding-bottom: 5px;
+}
+
+div#trunk1 h4{
+    border-left: solid #B8D2EE;
+    border-right: solid #B8D2EE;
+}
+
+div#trunk2 h4{
+    border-left: solid #6AD7E5;
+    border-right: solid #6AD7E5;
+}
+
+div#trunk3 h4{
+    border-left: solid #5F609E;
+    border-right: solid #5F609E;
 }
 
 div.trunk ul li{
-    color: #c99771;
+    color: #4A4A4A;
     margin-bottom: 5%;
 }
 
@@ -422,8 +499,8 @@ footer div{
 }
 
 footer div p{
-    font-family: Raleway;
-    color: #633e29;
+    font-family: Raleway_Thin;
+    color: #4a4a4a;
 }
 
 p#quote{
