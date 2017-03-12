@@ -412,7 +412,7 @@ div#soils{
 #soil1{
     transform: skewY(-8deg);
     background: #eee;
-    opacity: .34;
+    opacity: .3;
     z-index: -10;
 }
 
@@ -420,7 +420,7 @@ div#soils{
     transform: skewY(-3deg);
     background: #eee;
     z-index: -2;
-    opacity: .9;
+    opacity: .7;
     animation-delay: 0.5s;
 }
 
